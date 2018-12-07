@@ -18,13 +18,12 @@ class Message extends Component{
 class HomePage extends Component {
     constructor(props){
         super(props);
-        //this.sendSomeData = this.sendSomeData.bind(this);
+        this.sendSomeData = this.sendSomeData.bind(this);
         this.updateMessage = this.updateMessage.bind(this);
         this.state = {
-            content: null, //initial content
-            messageValue: '',
+            content: null, //Initial content
+            messageValue: ''
         };
-
     }
 
     updateMessage(e){
