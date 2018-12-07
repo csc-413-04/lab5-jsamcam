@@ -8,7 +8,9 @@ import store from './redux/store';
 import {importMessage} from "./redux/actions";
 
 
+//const websocket = new WebSocket('ws://10.143.199.114:3000/ws');
 const websocket = new WebSocket('ws://localhost:1234/ws');
+
 
 websocket.onopen = () => {
     console.log('ws has connected');
